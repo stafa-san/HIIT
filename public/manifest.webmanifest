@@ -1,0 +1,14 @@
+{
+  "name": "H.I.T.T. Coach Alerts",
+  "short_name": "H.I.T.T.",
+  "description": "Real-time high-magnitude impact alerts from H.I.T.T. helmet sensors.",
+  "start_url": "/m",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#13284b",
+  "theme_color": "#13284b",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/apple-icon", "sizes": "180x180", "type": "image/png" }
+  ]
+}
