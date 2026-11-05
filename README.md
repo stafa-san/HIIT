@@ -15,6 +15,9 @@ track every hit across the season, and run the return-to-play protocol.
 | **Players**: roster with season stats and status | `/players` | Trainer |
 | **Sensor management**: fleet list, reassign / assign / retire / register, test-tap verification | `/sensors` | Equipment manager |
 
+Concept screens, the pitch deck, and how each concept maps to the app are in
+[`Docs/`](Docs/README.md).
+
 ## Quick start
 
 ```bash
@@ -106,7 +109,7 @@ src/
 firebase/                   Firestore rules + indexes
 hardware/                   sensor ↔ app contract, reference Arduino sketch
 scripts/                    seed + emulator verification
-Docs/Project.md             architecture and data model
+Docs/                       architecture (Project.md), concept screens, pitch deck
 ```
 
 ## Branches

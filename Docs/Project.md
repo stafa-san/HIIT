@@ -1,5 +1,7 @@
 # H.I.T.T. — architecture
 
+Concept screens and the mapping to routes: [Docs/README.md](README.md).
+
 ## System
 
 ```
