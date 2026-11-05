@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Surfaces — light slate page, white cards (sideline tablets are used in daylight) */
+    --background: 220 23% 96%;
+    --foreground: 220 45% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 45% 15%;
+    --muted: 220 22% 95%;
+    --muted-foreground: 217 15% 42%;
+    --border: 220 18% 88%;
+    --input: 220 16% 84%;
+    --ring: 216 58% 36%;
+
+    /* Brand navy (header, primary buttons) */
+    --navy: 218 58% 19%;
+    --navy-foreground: 0 0% 100%;
+    --navy-soft: 217 45% 26%;
+    --navy-muted: 216 30% 74%;
+
+    /* Status */
+    --alert: 353 76% 39%;
+    --alert-foreground: 0 0% 100%;
+    --alert-soft: 353 80% 96%;
+    --watch: 37 78% 56%;
+    --watch-foreground: 33 100% 28%;
+    --watch-soft: 40 92% 92%;
+    --ok: 216 38% 30%;
+    --ok-foreground: 216 38% 30%;
+    --ok-soft: 216 45% 93%;
+    --success: 148 48% 36%;
+    --success-foreground: 0 0% 100%;
+    --success-soft: 148 45% 93%;
+    --info: 213 55% 46%;
+    --info-soft: 213 70% 95%;
+
+    /* Charts */
+    /* Validated categorical pair (dataviz validator: band, chroma, CVD, 3:1) */
+    --chart-practice: 218 63% 38%; /* #24519e */
+    --chart-game: 217 70% 62%; /* #5a8fe2 */
+    --chart-track: 220 20% 92%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: 'tnum' 1;
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  .eyebrow {
+    @apply text-[11px] font-bold uppercase tracking-[0.14em];
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+  .print-card {
+    break-inside: avoid;
+    box-shadow: none !important;
+  }
+}
